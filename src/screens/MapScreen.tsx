@@ -1,10 +1,10 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-export const SecondaryScreen = () => {
+export const MapScreen = () => {
   return (
     <View>
-      <Text>SecondaryScreen</Text>
+      <Text>Map Screen</Text>
     </View>
   );
 };

@@ -9,10 +9,18 @@ export const HomeScreen = ({navigation}: props) => {
         <Icon name="alarm" size={20} />
         <Text>HomeScreen</Text>
       </View>
-      <Button
-        title="Go to secondary page"
-        onPress={() => navigation.navigate('Secondary')}
-      />
+      <View style={styles.button}>
+        <Button
+          title="Go to permissions page"
+          onPress={() => navigation.navigate('Permissions')}
+        />
+      </View>
+      <View style={styles.button}>
+        <Button
+          title="Go to map page"
+          onPress={() => navigation.navigate('Map')}
+        />
+      </View>
     </View>
   );
 };
@@ -23,5 +31,8 @@ const styles = StyleSheet.create({
   },
   row: {
     flexDirection: 'row',
+  },
+  button: {
+    marginVertical: 5,
   },
 });

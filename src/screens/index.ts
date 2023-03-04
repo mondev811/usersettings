@@ -1,2 +1,3 @@
 export * from './HomeScreen';
-export * from './SecondaryScreen';
+export * from './MapScreen';
+export * from './PermissionsScreen';
