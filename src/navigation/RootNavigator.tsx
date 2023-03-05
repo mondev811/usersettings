@@ -9,6 +9,7 @@ export const RootNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
+        initialRouteName="Permissions"
         screenOptions={{
           headerShown: false,
           cardStyle: {
