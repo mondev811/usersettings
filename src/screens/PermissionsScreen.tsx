@@ -1,10 +1,17 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React from 'react';
+import {Button, StyleSheet, Text, View} from 'react-native';
+import React, {useContext} from 'react';
+
+import {PermissionsContext} from '../context/PermissionsContext';
 
 export const PermissionsScreen = () => {
+  const {permissions, askLocationPermission} = useContext(PermissionsContext);
+
   return (
     <View style={styles.container}>
       <Text>PermissionsScreen</Text>
+
+      <Button title="Permission" onPress={askLocationPermission} />
+      <Text>{JSON.stringify(permissions, null, 4)}</Text>
     </View>
   );
 };
